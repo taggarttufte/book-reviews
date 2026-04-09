@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article>
+  <div class="review-header">
+    <h1>{{ page.title }}</h1>
+    <div class="book-meta">
+      {{ page.book_author }} | {{ page.date | date: "%B %Y" }}
+      {% if page.rating %} | <span class="rating">{% for i in (1..page.rating) %}&#9733;{% endfor %}{% assign empty = 5 | minus: page.rating %}{% for i in (1..empty) %}&#9734;{% endfor %}</span>{% endif %}
+    </div>
+    {% if page.tags.size > 0 %}
+    <div class="tags">
+      {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="review-body">
+    {{ content }}
+  </div>
+</article>

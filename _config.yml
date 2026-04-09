@@ -1,0 +1,27 @@
+title: Taggart Tufte
+description: Book reviews on philosophy of science, AI safety, and technical non-fiction
+url: "https://taggarttufte.github.io"
+baseurl: "/book-reviews"
+
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+permalink: /:categories/:title/
+
+collections:
+  reviews:
+    output: true
+    sort_by: date
+    permalink: /reviews/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "reviews"
+    values:
+      layout: "review"
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax

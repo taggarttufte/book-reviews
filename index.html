@@ -1,0 +1,22 @@
+---
+layout: default
+title: Reviews
+---
+
+<div class="reviews-list">
+  {% assign sorted_reviews = site.reviews | sort: 'date' | reverse %}
+  {% for review in sorted_reviews %}
+  <div class="review-card">
+    <a href="{{ review.url | relative_url }}">
+      <h3>{{ review.title }}</h3>
+      <div class="author">{{ review.book_author }}</div>
+      <div class="summary">{{ review.summary }}</div>
+      <div class="meta">
+        <span>{{ review.date | date: "%b %Y" }}</span>
+        {% if review.rating %}<span class="rating">{% for i in (1..review.rating) %}&#9733;{% endfor %}</span>{% endif %}
+        {% for tag in review.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
