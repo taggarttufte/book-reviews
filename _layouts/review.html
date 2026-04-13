@@ -6,7 +6,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <div class="book-meta">
       {{ page.book_author }} | {{ page.date | date: "%B %Y" }}
-      {% if page.rating %} | <span class="rating">{% for i in (1..page.rating) %}&#9733;{% endfor %}{% assign empty = 5 | minus: page.rating %}{% for i in (1..empty) %}&#9734;{% endfor %}</span>{% endif %}
+      {% if page.rating %} | <span class="rating">{% for i in (1..page.rating) %}&#9733;{% endfor %}{% assign empty_stars = 5 | minus: page.rating %}{% if empty_stars > 0 %}{% for i in (1..empty_stars) %}&#9734;{% endfor %}{% endif %}</span>{% endif %}
     </div>
     {% if page.tags.size > 0 %}
     <div class="tags">
