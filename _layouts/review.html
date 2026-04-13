@@ -5,7 +5,12 @@ layout: default
   <div class="review-header">
     <h1>{{ page.title }}</h1>
     <div class="book-meta">
-      {{ page.book_author }} | {{ page.date | date: "%B %Y" }}
+      {{ page.book_author }}
+      {% if page.date_finished or page.date_reviewed %}
+        | {% if page.date_finished %}Finished {{ page.date_finished | date: "%B %-d, %Y" }}{% endif %}{% if page.date_finished and page.date_reviewed %} · {% endif %}{% if page.date_reviewed %}Reviewed {{ page.date_reviewed | date: "%B %-d, %Y" }}{% endif %}
+      {% else %}
+        | {{ page.date | date: "%B %Y" }}
+      {% endif %}
       {% if page.rating %} | <span class="rating">{% for i in (1..page.rating) %}&#9733;{% endfor %}{% assign empty_stars = 5 | minus: page.rating %}{% if empty_stars > 0 %}{% for i in (1..empty_stars) %}&#9734;{% endfor %}{% endif %}</span>{% endif %}
     </div>
     {% if page.tags.size > 0 %}

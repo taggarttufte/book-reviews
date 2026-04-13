@@ -2,6 +2,8 @@
 title: "The Alignment Problem"
 book_author: "Brian Christian"
 date: 2026-04-12
+date_finished: 2026-03-09
+date_reviewed: 2026-04-12
 rating: 5
 summary: "The most accessible entry point to AI alignment — Christian synthesizes scattered ideas into a coherent picture, though he undersells the risk."
 tags: [AI-safety, alignment]
