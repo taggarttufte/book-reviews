@@ -8,11 +8,11 @@ permalink: /about/
 
 I'm Taggart Tufte, a math major at Montana State University graduating in May 2026, transitioning into AI/ML and alignment research.
 
-This site collects my reviews of books at the intersection of philosophy of science, AI safety, epistemology, and technical non-fiction. I read exclusively via audiobook at 2-3.5x speed, which shapes how I engage with these texts: dense arguments get slow, careful passes; narrative non-fiction gets absorbed at pace.
+I read almost exclusively via audiobooks at high speeds usually around 3x on audible. This does change a bit about how I read the books, Many of the books I listen to are when I am doing something else passively. My favorite is driving, just enough stimulus to keep my mind from wandering, a good second is playing sudoku. I occasionally have to slow it down or relisten to specific sections but for the most part I am quite comfortable at around 3x for non fiction.
 
-I'm particularly interested in how ideas from different fields connect: Taleb's antifragility meets Camus's absurdism, Yudkowsky's alignment arguments meet Bostrom's astronomical waste, Callard's Socratic method meets the practice of doing philosophy rather than just reading it.
+I'm current interests have been in: Nassim Taleb's Black swan and Fooled by Randomness, Albert Camus's absurdism, Yudkowsky's alignment arguments, Bostrom's astronomical waste (and soon his books), Agnes Callard's Socratic method.
 
-These reviews are as much for me as for anyone else. Writing forces synthesis. If I can't explain what a book changed about my thinking, I probably didn't understand it.
+These reviews are as much for me as for anyone else. Writing forces synthesis. It helps me collect my thoughts post reading or even a while after I completed it. It also allows me to see my thoughts at a point in time so I can revisit them and see how my views have changed or remained.
 
 ### Contact
 
