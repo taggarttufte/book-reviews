@@ -2,6 +2,7 @@
 title: "If Anyone Builds It, Everyone Dies"
 book_author: "Eliezer Yudkowsky"
 date: 2026-01-15
+published: false
 rating: 5
 summary: "Yudkowsky's case for why AGI alignment is harder than it looks, and why the default outcome is catastrophic. The most uncomfortable book I've read."
 tags: [AI-safety, alignment, existential-risk]
